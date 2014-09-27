@@ -11,9 +11,3 @@ Feature: single digit additions
     And I set Second operand as "6"
     And I press "+"
     Then I should get result as "11"
-
-  Scenario: single digit additions of 8 + 0
-    Given I set First operand as "8"
-    And I set Second operand as "0"
-    And I press "+"
-    Then I should get result as "8"

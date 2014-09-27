@@ -7,5 +7,5 @@ And(/^I set Second operand as "([^"]*)"$/) do |second_operand|
 end
 
 Then(/^I should get result as "([^"]*)"$/) do |result|
-  query("* id:'result'",:text).first.should == result
+  expect(query("* id:'result'",:text).first).to eq result
 end
