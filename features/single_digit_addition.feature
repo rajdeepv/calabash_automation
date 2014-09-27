@@ -10,7 +10,7 @@ Feature: single digit additions
     Given I set First operand as "5"
     And I set Second operand as "6"
     And I press "+"
-    Then I should get result as "12"
+    Then I should get result as "11"
 
   Scenario: single digit additions of 8 + 0
     Given I set First operand as "8"
