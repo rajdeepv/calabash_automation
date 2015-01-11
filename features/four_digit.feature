@@ -1,5 +1,6 @@
 Feature: four digit additions
 
+  @test
   Scenario: four digit additions of two numbers
     Given I set First operand as "4444"
     And I set Second operand as "1"

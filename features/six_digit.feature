@@ -1,5 +1,6 @@
 Feature: six digit additions
 
+  @test
   Scenario: six digit additions of two numbers
     Given I set First operand as "666666"
     And I set Second operand as "1"
