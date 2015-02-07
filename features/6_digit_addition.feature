@@ -1,8 +1,8 @@
 Feature: seven digit additions
 
   @test
-  Scenario: seven digit additions of two numbers
-    Given I set First operand as "7777777"
-    And I set Second operand as "1"
+  Scenario: six digit additions of two numbers
+    Given I set First operand as "666666"
+    And I set Second operand as "666666"
     And I press "+"
-    Then I should get result as "7777778"
+    Then I should get result as "1333332"

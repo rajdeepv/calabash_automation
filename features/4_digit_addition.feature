@@ -1,8 +1,8 @@
 Feature: five digit additions
 
   @test
-  Scenario: five digit additions of two numbers
-    Given I set First operand as "55555"
-    And I set Second operand as "1"
+  Scenario: four digit additions of two numbers
+    Given I set First operand as "4444"
+    And I set Second operand as "4444"
     And I press "+"
-    Then I should get result as "55556"
+    Then I should get result as "8888"
