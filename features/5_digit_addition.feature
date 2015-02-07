@@ -6,3 +6,9 @@ Feature: four digit additions
     And I set Second operand as "55555"
     And I press "+"
     Then I should get result as "111110"
+
+  Scenario: five digit additions of two numbers
+    Given I set First operand as "50000"
+    And I set Second operand as "50000"
+    And I press "+"
+    Then I should get result as "10000"

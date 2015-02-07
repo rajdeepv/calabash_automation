@@ -7,9 +7,3 @@ Feature: eight digit additions
     And I press "+"
     Then I should get result as "177777776"
 
-  @test
-  Scenario: eight digit additions of 11111111 + 11111111
-    Given I set First operand as "11111111"
-    And I set Second operand as "11111111"
-    And I press "+"
-    Then I should get result as "22222222"
