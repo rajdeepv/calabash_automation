@@ -5,4 +5,4 @@ Feature: six digit additions
     Given I set First operand as "7777777"
     And I set Second operand as "7777777"
     And I press "+"
-    Then I should get result as ""
+    Then I should get result as "15555554"

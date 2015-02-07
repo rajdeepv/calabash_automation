@@ -5,7 +5,7 @@ Feature: eight digit additions
     Given I set First operand as "88888888"
     And I set Second operand as "88888888"
     And I press "+"
-    Then I should get result as "204"
+    Then I should get result as "177777776"
 
   @test
   Scenario: eight digit additions of 11111111 + 11111111
