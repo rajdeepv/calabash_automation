@@ -11,4 +11,4 @@ Feature: four digit additions
     Given I set First operand as "50000"
     And I set Second operand as "50000"
     And I press "+"
-    Then I should get result as "10000"
+    Then I should get result as "100000"
