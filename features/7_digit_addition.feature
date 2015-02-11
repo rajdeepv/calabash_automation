@@ -1,4 +1,4 @@
-Feature: six digit additions
+Feature: seven digit additions
 
   @test
   Scenario: seven digit additions of two numbers
