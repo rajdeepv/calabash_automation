@@ -7,5 +7,6 @@ And(/^I set Second operand as "([^"]*)"$/) do |second_operand|
 end
 
 Then(/^I should get result as "([^"]*)"$/) do |result|
+  p nakal_execute("result")
   expect(query("* id:'result'",:text).first).to eq result
 end
