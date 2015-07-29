@@ -16,5 +16,7 @@ And(/^I save my note$/) do
 end
 
 Then(/^I should see "([^"]*)" as one of my note$/) do |note|
+  wait_for_element_exists("* id:'text2'")
   expect(element_exists("* marked:'#{note}'")).to be true
+  nakal_execute("notes/new_note",{:acceptable_diff => 0.016})
 end
