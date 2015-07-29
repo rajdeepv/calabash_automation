@@ -1,3 +1,0 @@
-calabash-android run DroidBootcamp.apk features
-
-bundle exec parallel_calabash -a DroidBootcamp.apk -o'-r features' features/ --serialize-stdout
