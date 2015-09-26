@@ -3,3 +3,6 @@ default_device:
  right: 0
  left: 0
  bottom: 0
+ new_note: {region_foo: [66, 852, 206, 996]}
+ notes/new_note: {region_foo: [210, 228, 340, 392]}
+ notes/subnote/new_note: {region_foo: [364, 484, 672, 770]}
