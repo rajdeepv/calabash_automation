@@ -6,7 +6,7 @@ require "nakal/cucumber"
 $PROJECT_ROOT = File.expand_path(File.join(File.dirname(__FILE__), '../..'))
 
 Nakal.platform = :android
-Nakal.directory= "./baseline_images/droid"
+Nakal.directory= "#{$PROJECT_ROOT}/baseline_images/droid"
 Nakal.timeout = 2
 Nakal.embed_screenshot = true
 
@@ -38,7 +38,7 @@ end
 
 
 def move_nakal_files_to_result_dir (platform)
-  Dir["./baseline_images/#{platform}/#{Nakal.device_name}/**/*_diff.png"].each do |file|
+  Dir["#{$PROJECT_ROOT}/baseline_images/#{platform}/#{Nakal.device_name}/**/*_diff.png"].each do |file|
     `mv #{file} #{$PROJECT_ROOT}/reports`
     `mv #{file.gsub('diff','current')} #{$PROJECT_ROOT}/reports`
     `cp #{file.gsub('_diff','')} #{$PROJECT_ROOT}/reports`

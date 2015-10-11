@@ -1,3 +1,4 @@
 /.idea
 reports/*.html
+reports/*.png
 test_servers/*
