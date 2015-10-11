@@ -1,1 +1,1 @@
-default: --format html --out reports/Automation_report_<%=ENV['DEVICE_INFO']%>_<%= ENV['TEST_PROCESS_NUMBER']%>.html --format pretty
+default: --format html --out reports/Automation_report_.html --format pretty

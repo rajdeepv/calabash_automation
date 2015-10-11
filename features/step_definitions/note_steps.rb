@@ -9,6 +9,7 @@ end
 And(/^I note down "([^"]*)"$/) do |note|
   sleep 1
   query("com.flufflydelusions.app.enotesclassic.NoteEdit$LinedEditText", :setText=>note)
+  nakal_execute("note_screen")
 end
 
 And(/^I save my note$/) do
@@ -18,7 +19,5 @@ end
 Then(/^I should see "([^"]*)" as one of my note$/) do |note|
   wait_for_element_exists("* id:'text2'")
   expect(element_exists("* marked:'#{note}'")).to be true
-  nakal_execute("new_note")
-  nakal_execute("notes/new_note")
-  nakal_execute("notes/subnote/new_note")
+  nakal_execute("home_screen")
 end
