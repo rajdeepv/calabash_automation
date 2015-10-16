@@ -3,7 +3,6 @@ Feature: In order to take a note
   I should be able to save a new note
 
   Scenario: new note
-    Given I am on login screen
-    When I enter invalid credentials
-    And I log-in
+    Given I enter invalid credentials
+    When I log-in
     Then I should see error message
