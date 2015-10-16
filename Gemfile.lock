@@ -1,15 +1,3 @@
-PATH
-  remote: /Users/rajdeepverma/projects/nakal
-  specs:
-    nakal (0.1.1)
-      rmagick (~> 2.15.2)
-
-PATH
-  remote: /Users/rajdeepverma/projects/parallel_calabash
-  specs:
-    parallel_calabash (0.2.4)
-      parallel
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -40,7 +28,8 @@ GEM
     method_source (0.8.2)
     multi_json (1.11.2)
     multi_test (0.1.2)
-    parallel (1.6.1)
+    nakal (0.0.7)
+      rmagick (~> 2.15.2)
     pry (0.10.2)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -73,8 +62,7 @@ PLATFORMS
 DEPENDENCIES
   calabash-android
   cucumber (~> 1.3.8)
-  nakal!
-  parallel_calabash!
+  nakal
   pry
   pry-nav
   rspec
